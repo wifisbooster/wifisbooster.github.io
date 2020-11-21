@@ -1,0 +1,42 @@
+.holiday-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.holiday-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.holiday-content__img {
+  height: 60px;
+  width: auto;
+}
+
+.holiday-content__text {
+  padding: 10px 20px;
+  border: 2px solid gold;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .holiday-content {
+    flex-direction: column;
+  }
+
+  .holiday-content__img {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .holiday-content__text {
+    margin-bottom: 10px;
+  }
+}
